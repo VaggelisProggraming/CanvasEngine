@@ -7,7 +7,7 @@ body {
     border: 0px;
     background-color: grey;
     color: #000080;
-    position: fixed;
+    position: absolute;
     left: 30%;
     right: 70%;
     top: 60%;
@@ -20,10 +20,16 @@ body {
 
 .logo {
     border-radius: 20px;
-    position: fixed;
+    position: relative;
     left: 30%;
     right: 50%;
     width: 500px;
+}
+@media screen and (width: 100px){
+    .logo {
+        display: flex;
+    }
+    
 }
 
 .yt {
@@ -34,7 +40,7 @@ body {
     height: 3em;
     margin: 20px auto;
     padding: 0;
-    position: fixed;
+    position: relative;
     left: 30%;
     right: 70%;
     top: 65%;
@@ -74,7 +80,7 @@ body {
 }   
 
 .parent{
-    position: fixed;
+    position: absolute;
     top: 70%;
     bottom: 30%;
     left: 30%;
